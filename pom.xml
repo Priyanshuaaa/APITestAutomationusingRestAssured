@@ -1,0 +1,71 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.qa.APITest</groupId>
+  <artifactId>com.qa.APITest</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>com.qa.APITest</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+ 
+  <dependencies>
+  <dependency>
+<groupId>org.testng</groupId>
+  <artifactId>testng</artifactId>
+  <version>6.14.3</version>
+  <scope>compile</scope>
+</dependency>
+<!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+<dependency>
+    <groupId>io.rest-assured</groupId>
+    <artifactId>rest-assured</artifactId>
+    <version>3.0.2</version>
+    <scope>test</scope>
+</dependency>
+<!-- https://mvnrepository.com/artifact/io.rest-assured/json-schema-validator -->
+<dependency>
+    <groupId>io.rest-assured</groupId>
+    <artifactId>json-schema-validator</artifactId>
+    <version>3.0.2</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/io.rest-assured/json-path -->
+<dependency>
+    <groupId>io.rest-assured</groupId>
+    <artifactId>json-path</artifactId>
+    <version>3.0.2</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/io.rest-assured/xml-path -->
+<dependency>
+    <groupId>io.rest-assured</groupId>
+    <artifactId>xml-path</artifactId>
+    <version>3.0.2</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/io.rest-assured/scala-support -->
+<dependency>
+    <groupId>io.rest-assured</groupId>
+    <artifactId>scala-support</artifactId>
+    <version>3.0.2</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured-common -->
+<dependency>
+    <groupId>io.rest-assured</groupId>
+    <artifactId>rest-assured-common</artifactId>
+    <version>3.0.2</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/io.rest-assured/spring-web-test-client -->
+
+<!-- https://mvnrepository.com/artifact/io.rest-assured/spring-mock-mvc -->
+<dependency>
+    <groupId>io.rest-assured</groupId>
+    <artifactId>spring-mock-mvc</artifactId>
+    <version>3.0.2</version>
+    <scope>test</scope>
+</dependency>
+  </dependencies>
+</project>

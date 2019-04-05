@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path=""/>
+	<classpathentry kind="lib" path="C:/Users/priyanshua/.m2/repository/xalan/xalan/2.7.2/xalan-2.7.2.jar" sourcepath="C:/Users/priyanshua/.m2/repository/xalan/xalan/2.7.2/xalan-2.7.2-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="xalan"/>
+			<attribute name="maven.artifactId" value="xalan"/>
+			<attribute name="maven.version" value="2.7.2"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
