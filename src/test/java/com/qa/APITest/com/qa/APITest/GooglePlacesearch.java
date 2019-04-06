@@ -5,6 +5,9 @@ import com.qaAPI.utility.APITestUtil;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
+import io.restassured.path.json.JsonPath;
+import io.restassured.response.Response;
+
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 
@@ -13,7 +16,7 @@ public class GooglePlacesearch{
 	
 
 	
-	@Test
+	@Test(enabled=false)
 	
 	public void googleplacesearchAPIscenario1test()
 	{
@@ -31,7 +34,7 @@ public class GooglePlacesearch{
 		//Header responses		
 }
 	
-	@Test
+	@Test(enabled=false)
 	
 	public void googleplacesearchAPIscenario2test()
 	{
@@ -42,7 +45,7 @@ public class GooglePlacesearch{
 		.then().assertThat().body("next_page_token",equalTo("CqQCFQEAAMjCLDRVBkbhlwXnHnbEOqne379BFHifQBlv3ORSY9xpT6_vEUUYPaHh-XMCf9PRS60_hOQeUbtXwvYsvbBoL3t5ZPYg9zGm24g8nuAY2BMahrVVNmuHW6A_WqToGeIUbOBQcGzBmVroHT_fObDhUrVMU9U1O9ium1oFp-OcvBMiMsnkaVkFI1FmCT5xM23nXC5jn2bMyZFQ0lEv5gE52wZlqVG-8EujjB1WD2A-RwhebkyMR1WiQzAZr96JZwl0Y-mS4pNtUJdNu11BGfepFeytC221HwPwaxwkKTRClgbuKMcJcQs4RZJWKfjjyA-FqOvmhTihXWY5jfupUfT-qKY1DKrRQ3t1lvaLqN9sxWtK1qxjttt0tVEITSiqScKG0hIQq5-MAGCpGfOFXEDKjc4uPhoU0qr271PD4PIyvXxS7dT0Moms2RI"));			
 }
 	
-	@Test
+	@Test(enabled=false)
 	
 	public void googleplacesearchAPIscenario3test()
 	{
@@ -52,5 +55,29 @@ public class GooglePlacesearch{
 		.when().get(APITestUtil.PlacesearchresourceURL())
 		.then().assertThat().body("results[0].geometry.location.lng",equalTo("151.2092955")).and().body("results[0].geometry.location.lat",equalTo("-33.8688197"));		
 }
+	
+	@Test
+	
+	public void googleplacesearchAPIscenario4test()
+	{
+		//BaseURl or Host
+		RestAssured.baseURI="https://maps.googleapis.com";
+		Response response=given()
+		.param("key","AIzaSyCtkrL1SYlW4Ld7HGyVXfijVAb5Hy5kwkY").param("location","-33.8670522,151.1957362").param("radius","500")
+		.when().get(APITestUtil.PlacesearchresourceURL())
+		.then().assertThat().body("status",equalTo("OVER_QUERY_LIMIT"))
+		.extract().response();
+		JsonPath js=RawtoJSONorXML.rawtoJSON(response);
+		System.out.println(response);
+//		int size=js.get("results.size()");
+//		for(int i=0;i<size;i++)
+//		{
+//			String result=js.get("results[i].geometry.id");
+//			System.out.println(result);
+//		}
+		
+		
+}
+
 
 }

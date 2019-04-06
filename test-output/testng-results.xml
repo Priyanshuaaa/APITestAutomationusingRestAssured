@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="3883" started-at="2019-04-05T11:52:22Z" finished-at="2019-04-05T11:52:26Z">
+  <suite name="Default suite" duration-ms="3421" started-at="2019-04-06T13:55:31Z" finished-at="2019-04-06T13:55:35Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="3883" started-at="2019-04-05T11:52:22Z" finished-at="2019-04-05T11:52:26Z">
-      <class name="com.qa.APITest.com.qa.APITest.AddandDeletePlaceIDthroughJSON">
-        <test-method status="PASS" signature="getdata()[pri:0, instance:com.qa.APITest.com.qa.APITest.AddandDeletePlaceIDthroughJSON@57baeedf]" name="getdata" is-config="true" duration-ms="10" started-at="2019-04-05T11:52:22Z" finished-at="2019-04-05T11:52:22Z">
+    <test name="Default test" duration-ms="3421" started-at="2019-04-06T13:55:31Z" finished-at="2019-04-06T13:55:35Z">
+      <class name="com.qa.APITest.com.qa.APITest.AddBookTest">
+        <test-method status="PASS" signature="getdata()[pri:0, instance:com.qa.APITest.com.qa.APITest.AddBookTest@57baeedf]" name="getdata" is-config="true" duration-ms="12" started-at="2019-04-06T13:55:31Z" finished-at="2019-04-06T13:55:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getdata -->
-        <test-method status="PASS" signature="addanddeleteplacethroughJSONtest()[pri:0, instance:com.qa.APITest.com.qa.APITest.AddandDeletePlaceIDthroughJSON@57baeedf]" name="addanddeleteplacethroughJSONtest" duration-ms="3805" started-at="2019-04-05T11:52:22Z" finished-at="2019-04-05T11:52:26Z">
+        <test-method status="PASS" signature="addanddeleteplacethroughJSONtest()[pri:0, instance:com.qa.APITest.com.qa.APITest.AddBookTest@57baeedf]" name="addanddeleteplacethroughJSONtest" duration-ms="3320" started-at="2019-04-06T13:55:31Z" finished-at="2019-04-06T13:55:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addanddeleteplacethroughJSONtest -->
-      </class> <!-- com.qa.APITest.com.qa.APITest.AddandDeletePlaceIDthroughJSON -->
+      </class> <!-- com.qa.APITest.com.qa.APITest.AddBookTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

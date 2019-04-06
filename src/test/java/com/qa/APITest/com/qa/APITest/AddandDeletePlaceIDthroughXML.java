@@ -58,7 +58,8 @@ public class AddandDeletePlaceIDthroughXML {
 		//Task2-Deleting the created Place ID.
 //		given().queryParam("key",prop.getProperty("KEY")).body("root.").when().post(APITestUtil.DeleteplaceresourceURLXML()).
 //		then().assertThat().statusCode(200).and().
-//		body("status",equalTo("OK"));		
+//		body("status",equalTo("OK"));	
+		
 		}	
 }
 

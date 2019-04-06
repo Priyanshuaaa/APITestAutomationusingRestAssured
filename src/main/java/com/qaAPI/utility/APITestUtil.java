@@ -21,7 +21,7 @@ public class APITestUtil {
 	
 	public static String PlacesearchresourceURL()
 	{
-		String placesearch="/maps/api/place/add/xml";
+		String placesearch="/maps/api/place/nearbysearch/json";
 		return placesearch;
 	}
 	
@@ -41,4 +41,12 @@ public class APITestUtil {
 		String deleteplace="/maps/api/place/add/xml";
 		return deleteplace;
 	}	
+	
+	public static String AddBookresourceURLJSON()
+	{
+		String addbook="/Library/Addbook.php";
+		return addbook;
+	}
+	
+	
 }

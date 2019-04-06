@@ -20,6 +20,12 @@ public class Payload{
 			    "}";
 		return addplace;
 	}
+	
+	public static String AddBookPOST()
+	{
+		String addbook="{\r\n\r\n\"name\":\"Learn Appium Automation with Javadfddfddfdfdfdfdfdfd\",\r\n\"isbn\":\"bcdgfggg\",\r\n\"aisle\":\"22743434\",\r\n\"author\":\"Johneeefdfeffdfffdfdfdfdfoe\"\r\n}\r\n\r\n";
+		return addbook;
+	}
 }
 
 

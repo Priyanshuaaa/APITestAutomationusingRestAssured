@@ -21,7 +21,6 @@ public class RawtoJSONorXML{
 	{
 	String responsestring=res.asString();
 	System.out.println(responsestring);
-
 	JsonPath js=new JsonPath(responsestring);
 	return js;
 }
