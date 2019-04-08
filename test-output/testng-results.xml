@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="2" total="3" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="3421" started-at="2019-04-06T13:55:31Z" finished-at="2019-04-06T13:55:35Z">
+  <suite name="Default suite" duration-ms="3830" started-at="2019-04-08T17:45:43Z" finished-at="2019-04-08T17:45:47Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="3421" started-at="2019-04-06T13:55:31Z" finished-at="2019-04-06T13:55:35Z">
+    <test name="Default test" duration-ms="3830" started-at="2019-04-08T17:45:43Z" finished-at="2019-04-08T17:45:47Z">
       <class name="com.qa.APITest.com.qa.APITest.AddBookTest">
-        <test-method status="PASS" signature="getdata()[pri:0, instance:com.qa.APITest.com.qa.APITest.AddBookTest@57baeedf]" name="getdata" is-config="true" duration-ms="12" started-at="2019-04-06T13:55:31Z" finished-at="2019-04-06T13:55:31Z">
+        <test-method status="PASS" signature="getdata()[pri:0, instance:com.qa.APITest.com.qa.APITest.AddBookTest@53b32d7]" name="getdata" is-config="true" duration-ms="13" started-at="2019-04-08T17:45:43Z" finished-at="2019-04-08T17:45:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getdata -->
-        <test-method status="PASS" signature="addanddeleteplacethroughJSONtest()[pri:0, instance:com.qa.APITest.com.qa.APITest.AddBookTest@57baeedf]" name="addanddeleteplacethroughJSONtest" duration-ms="3320" started-at="2019-04-06T13:55:31Z" finished-at="2019-04-06T13:55:35Z">
+        <test-method status="PASS" signature="staticpayloadJSONtest()[pri:0, instance:com.qa.APITest.com.qa.APITest.AddBookTest@53b32d7]" name="staticpayloadJSONtest" duration-ms="3654" started-at="2019-04-08T17:45:43Z" finished-at="2019-04-08T17:45:47Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addanddeleteplacethroughJSONtest -->
+        </test-method> <!-- staticpayloadJSONtest -->
       </class> <!-- com.qa.APITest.com.qa.APITest.AddBookTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

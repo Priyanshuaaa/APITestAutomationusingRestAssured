@@ -21,13 +21,20 @@ public class Payload{
 		return addplace;
 	}
 	
-	public static String AddBookPOST()
+	public static String AddBookPOSTJSON(String book,String isbn,String aisle,String author)
 	{
-		String addbook="{\r\n\r\n\"name\":\"Learn Appium Automation with Javadfddfddfdfdfdfdfdfd\",\r\n\"isbn\":\"bcdgfggg\",\r\n\"aisle\":\"22743434\",\r\n\"author\":\"Johneeefdfeffdfffdfdfdfdfoe\"\r\n}\r\n\r\n";
+		String addbook="{\r\n\r\n\"name\":\""+book+"\",\r\n\"isbn\":\""+isbn+"\",\r\n\"aisle\":\""+aisle+"\",\r\n\"author\":\""+author+"\"\r\n}\r\n\r\n";
 		return addbook;
 	}
+	
+	public static String AddBookPOST(String isbn,String aisle)
+	{
+		String addbook="{\r\n\r\n\"name\":\"Automation testing using TestNG\",\r\n\"isbn\":\""+isbn+"\",\r\n\"aisle\":\""+aisle+"\",\r\n\"author\":\"Opera King\"\r\n}\r\n\r\n";
+		return addbook;
+	}
+	
+	
 }
-
 
 
 

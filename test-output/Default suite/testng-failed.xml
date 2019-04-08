@@ -5,7 +5,7 @@
     <classes>
       <class name="com.qa.APITest.com.qa.APITest.AddBookTest">
         <methods>
-          <include name="addanddeleteplacethroughJSONtest"/>
+          <include name="Addbookusingdataprovider" invocation-numbers="0 1"/>
           <include name="getdata"/>
         </methods>
       </class> <!-- com.qa.APITest.com.qa.APITest.AddBookTest -->

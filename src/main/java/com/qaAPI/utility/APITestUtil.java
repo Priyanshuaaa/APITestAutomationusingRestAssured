@@ -48,5 +48,11 @@ public class APITestUtil {
 		return addbook;
 	}
 	
+	public static String DeleteBookresourceURLJSON()
+	{
+		String deletebook="/Library/DeleteBook.php";
+		return deletebook;
+	}
+	
 	
 }
