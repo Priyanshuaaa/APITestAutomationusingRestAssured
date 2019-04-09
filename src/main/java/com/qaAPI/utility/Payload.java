@@ -33,6 +33,12 @@ public class Payload{
 		return addbook;
 	}
 	
+	public static String loginJIRAPOST(String username,String password)
+	{
+		String login="{\r\n    \"username\": \""+username+"\",\r\n    \"password\": \""+password+"\"\r\n}";
+		return login;
+	}
+
 	
 }
 

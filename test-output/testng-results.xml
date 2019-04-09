@@ -1,21 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="2" total="3" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="3830" started-at="2019-04-08T17:45:43Z" finished-at="2019-04-08T17:45:47Z">
+  <suite name="Default suite" duration-ms="6840" started-at="2019-04-09T17:20:13Z" finished-at="2019-04-09T17:20:20Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="3830" started-at="2019-04-08T17:45:43Z" finished-at="2019-04-08T17:45:47Z">
-      <class name="com.qa.APITest.com.qa.APITest.AddBookTest">
-        <test-method status="PASS" signature="getdata()[pri:0, instance:com.qa.APITest.com.qa.APITest.AddBookTest@53b32d7]" name="getdata" is-config="true" duration-ms="13" started-at="2019-04-08T17:45:43Z" finished-at="2019-04-08T17:45:43Z">
+    <test name="Default test" duration-ms="6840" started-at="2019-04-09T17:20:13Z" finished-at="2019-04-09T17:20:20Z">
+      <class name="com.qa.JIRAAPITests.Authenticationtests">
+        <test-method status="PASS" signature="getdata()[pri:0, instance:com.qa.JIRAAPITests.Authenticationtests@53b32d7]" name="getdata" is-config="true" duration-ms="31" started-at="2019-04-09T17:20:13Z" finished-at="2019-04-09T17:20:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getdata -->
-        <test-method status="PASS" signature="staticpayloadJSONtest()[pri:0, instance:com.qa.APITest.com.qa.APITest.AddBookTest@53b32d7]" name="staticpayloadJSONtest" duration-ms="3654" started-at="2019-04-08T17:45:43Z" finished-at="2019-04-08T17:45:47Z">
+        <test-method status="PASS" signature="AuthenticationJIRA()[pri:0, instance:com.qa.JIRAAPITests.Authenticationtests@53b32d7]" name="AuthenticationJIRA" duration-ms="6312" started-at="2019-04-09T17:20:13Z" description="Test to Authenticate to JIRA API with valid login credentials" finished-at="2019-04-09T17:20:20Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- staticpayloadJSONtest -->
-      </class> <!-- com.qa.APITest.com.qa.APITest.AddBookTest -->
+        </test-method> <!-- AuthenticationJIRA -->
+        <test-method status="PASS" signature="JIRAuthenticationinvalidata(java.lang.String, java.lang.String)[pri:0, instance:com.qa.JIRAAPITests.Authenticationtests@53b32d7]" name="JIRAuthenticationinvalidata" duration-ms="149" started-at="2019-04-09T17:20:20Z" description="Test to Authenticate to JIRA API with invalid login credentials" data-provider="getJIRAlogindata" finished-at="2019-04-09T17:20:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ffvfvv]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[vjfvfjvnfvn]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JIRAuthenticationinvalidata -->
+        <test-method status="PASS" signature="getdata()[pri:0, instance:com.qa.JIRAAPITests.Authenticationtests@53b32d7]" name="getdata" is-config="true" duration-ms="0" started-at="2019-04-09T17:20:20Z" finished-at="2019-04-09T17:20:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getdata -->
+        <test-method status="PASS" signature="getdata()[pri:0, instance:com.qa.JIRAAPITests.Authenticationtests@53b32d7]" name="getdata" is-config="true" duration-ms="2" started-at="2019-04-09T17:20:20Z" finished-at="2019-04-09T17:20:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getdata -->
+        <test-method status="PASS" signature="JIRAuthenticationinvalidata(java.lang.String, java.lang.String)[pri:0, instance:com.qa.JIRAAPITests.Authenticationtests@53b32d7]" name="JIRAuthenticationinvalidata" duration-ms="67" started-at="2019-04-09T17:20:20Z" description="Test to Authenticate to JIRA API with invalid login credentials" data-provider="getJIRAlogindata" finished-at="2019-04-09T17:20:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[frfhrfvfvfvf]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Chetu@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JIRAuthenticationinvalidata -->
+        <test-method status="PASS" signature="getdata()[pri:0, instance:com.qa.JIRAAPITests.Authenticationtests@53b32d7]" name="getdata" is-config="true" duration-ms="1" started-at="2019-04-09T17:20:20Z" finished-at="2019-04-09T17:20:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getdata -->
+        <test-method status="PASS" signature="JIRAuthenticationinvalidata(java.lang.String, java.lang.String)[pri:0, instance:com.qa.JIRAAPITests.Authenticationtests@53b32d7]" name="JIRAuthenticationinvalidata" duration-ms="78" started-at="2019-04-09T17:20:20Z" description="Test to Authenticate to JIRA API with invalid login credentials" data-provider="getJIRAlogindata" finished-at="2019-04-09T17:20:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[vfvhfuvhfuvfuvfuvfuvfvhfuvhfuvufvhufvufiviuvv112121222212]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[fhdvfvnfv8434343355353gfgbfhnfhbbbfg4855554]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JIRAuthenticationinvalidata -->
+        <test-method status="PASS" signature="getdata()[pri:0, instance:com.qa.JIRAAPITests.Authenticationtests@53b32d7]" name="getdata" is-config="true" duration-ms="1" started-at="2019-04-09T17:20:20Z" finished-at="2019-04-09T17:20:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getdata -->
+        <test-method status="PASS" signature="JIRAuthenticationinvalidata(java.lang.String, java.lang.String)[pri:0, instance:com.qa.JIRAAPITests.Authenticationtests@53b32d7]" name="JIRAuthenticationinvalidata" duration-ms="48" started-at="2019-04-09T17:20:20Z" description="Test to Authenticate to JIRA API with invalid login credentials" data-provider="getJIRAlogindata" finished-at="2019-04-09T17:20:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[<HTML>]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[<div>]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JIRAuthenticationinvalidata -->
+        <test-method status="PASS" signature="getdata()[pri:0, instance:com.qa.JIRAAPITests.Authenticationtests@53b32d7]" name="getdata" is-config="true" duration-ms="4" started-at="2019-04-09T17:20:20Z" finished-at="2019-04-09T17:20:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getdata -->
+        <test-method status="PASS" signature="JIRAuthenticationinvalidata(java.lang.String, java.lang.String)[pri:0, instance:com.qa.JIRAAPITests.Authenticationtests@53b32d7]" name="JIRAuthenticationinvalidata" duration-ms="73" started-at="2019-04-09T17:20:20Z" description="Test to Authenticate to JIRA API with invalid login credentials" data-provider="getJIRAlogindata" finished-at="2019-04-09T17:20:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JIRAuthenticationinvalidata -->
+      </class> <!-- com.qa.JIRAAPITests.Authenticationtests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

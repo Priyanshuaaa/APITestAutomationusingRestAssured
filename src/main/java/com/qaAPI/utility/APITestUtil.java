@@ -54,5 +54,11 @@ public class APITestUtil {
 		return deletebook;
 	}
 	
+	public static String JIRAloginresourceJSON()
+	{
+		String loginURL="/rest/auth/1/session";
+		return loginURL;
+	}
+	
 	
 }

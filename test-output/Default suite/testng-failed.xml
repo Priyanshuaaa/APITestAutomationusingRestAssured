@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.APITest.com.qa.APITest.AddBookTest">
+      <class name="com.qa.JIRAAPITests.Authenticationtests">
         <methods>
-          <include name="Addbookusingdataprovider" invocation-numbers="0 1"/>
           <include name="getdata"/>
+          <include name="AuthenticationJIRA"/>
         </methods>
-      </class> <!-- com.qa.APITest.com.qa.APITest.AddBookTest -->
+      </class> <!-- com.qa.JIRAAPITests.Authenticationtests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
