@@ -38,7 +38,18 @@ public class Payload{
 		String login="{\r\n    \"username\": \""+username+"\",\r\n    \"password\": \""+password+"\"\r\n}";
 		return login;
 	}
+	
+	public static String CreateissuePOST()
+	{
+		String createissue="{\r\n    \"fields\": {\r\n       \"project\":\r\n       {\r\n          \"key\": \"DC\"\r\n       },\r\n       \"summary\": \"Debit Card information is not getting saved properly into database\",\r\n       \"description\": \"After submitting the POST request from API,the debit card information is not getting saved into the database \",\r\n       \"issuetype\": {\r\n          \"name\": \"Bug\"\r\n       }\r\n   }\r\n}";
+		return createissue;
+	}
 
+	public static String CreateissueinvalidPOST()
+	{
+		String invalibody="{\r\n    \"fields\": {\r\n       \"projects\":\r\n       {\r\n          \"keys\": \"DC\"\r\n       },\r\n       \"summaryss\": \"Debit Card information is not getting saved properly into database\",\r\n       \"description\": \"After submitting the POST request from API,the debit card information is not getting saved into the database \",\r\n       \"issuetype\": {\r\n          \"name\": \"Bug\"\r\n       }\r\n   }\r\n}";
+		return invalibody;
+	}
 	
 }
 

@@ -60,5 +60,11 @@ public class APITestUtil {
 		return loginURL;
 	}
 	
+	public static String CreateissueresourceJSON()
+	{
+		String loginURL="/rest/api/2/issue";
+		return loginURL;
+	}
+	
 	
 }
