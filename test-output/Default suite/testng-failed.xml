@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.JIRAAPITests.Authenticationtests">
+      <class name="com.qa.JIRAAPITests.CreateIssue">
         <methods>
+          <include name="GetIssueDetails"/>
           <include name="getdata"/>
-          <include name="AuthenticationJIRA"/>
         </methods>
-      </class> <!-- com.qa.JIRAAPITests.Authenticationtests -->
+      </class> <!-- com.qa.JIRAAPITests.CreateIssue -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

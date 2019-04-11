@@ -1,7 +1,12 @@
 package com.qaAPI.utility;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+
+import com.qaAPI.utility.APITestUtil;
+
+
 import com.qaAPI.utility.APITestUtil;
 
 
@@ -65,6 +70,13 @@ public class APITestUtil {
 		String loginURL="/rest/api/2/issue";
 		return loginURL;
 	}
+	
+	public static String AddCommentsJSON(String issueid)
+	{
+		String comments="rest/api/2/issue/"+issueid+"/comment";
+		return comments;
+	}
+
 	
 	
 }

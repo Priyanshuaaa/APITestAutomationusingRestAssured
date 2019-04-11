@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="2" total="3" passed="1">
+<testng-results skipped="0" failed="0" ignored="4" total="5" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="2445" started-at="2019-04-10T17:32:39Z" finished-at="2019-04-10T17:32:41Z">
+  <suite name="Default suite" duration-ms="3883" started-at="2019-04-11T17:50:45Z" finished-at="2019-04-11T17:50:49Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="2445" started-at="2019-04-10T17:32:39Z" finished-at="2019-04-10T17:32:41Z">
+    <test name="Default test" duration-ms="3883" started-at="2019-04-11T17:50:45Z" finished-at="2019-04-11T17:50:49Z">
       <class name="com.qa.JIRAAPITests.CreateIssue">
-        <test-method status="PASS" signature="getdata()[pri:0, instance:com.qa.JIRAAPITests.CreateIssue@57baeedf]" name="getdata" is-config="true" duration-ms="22" started-at="2019-04-10T17:32:39Z" finished-at="2019-04-10T17:32:39Z">
+        <test-method status="PASS" signature="getdata()[pri:0, instance:com.qa.JIRAAPITests.CreateIssue@57baeedf]" name="getdata" is-config="true" duration-ms="20" started-at="2019-04-11T17:50:45Z" finished-at="2019-04-11T17:50:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getdata -->
-        <test-method status="PASS" signature="BlankSessionid()[pri:0, instance:com.qa.JIRAAPITests.CreateIssue@57baeedf]" name="BlankSessionid" duration-ms="2372" started-at="2019-04-10T17:32:39Z" description="Test after not passing the session id into an header and valid request body for Create Issue request" finished-at="2019-04-10T17:32:41Z">
+        <test-method status="PASS" signature="GetIssueDetails()[pri:0, instance:com.qa.JIRAAPITests.CreateIssue@57baeedf]" name="GetIssueDetails" duration-ms="3812" started-at="2019-04-11T17:50:45Z" description="Test to get the parameters of an issue after passing the valid issue id with no query parameters" finished-at="2019-04-11T17:50:49Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- BlankSessionid -->
+        </test-method> <!-- GetIssueDetails -->
       </class> <!-- com.qa.JIRAAPITests.CreateIssue -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

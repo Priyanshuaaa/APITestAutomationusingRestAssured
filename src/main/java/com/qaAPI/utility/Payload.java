@@ -39,9 +39,9 @@ public class Payload{
 		return login;
 	}
 	
-	public static String CreateissuePOST()
+	public static String CreateissuePOST(String projectkey,String summary,String desc,String name)
 	{
-		String createissue="{\r\n    \"fields\": {\r\n       \"project\":\r\n       {\r\n          \"key\": \"DC\"\r\n       },\r\n       \"summary\": \"Debit Card information is not getting saved properly into database\",\r\n       \"description\": \"After submitting the POST request from API,the debit card information is not getting saved into the database \",\r\n       \"issuetype\": {\r\n          \"name\": \"Bug\"\r\n       }\r\n   }\r\n}";
+		String createissue="{\r\n    \"fields\": {\r\n       \"project\":\r\n       {\r\n          \"key\": \""+projectkey+"\"\r\n       },\r\n       \"summary\": \""+summary+"\",\r\n       \"description\": \""+desc+" \",\r\n       \"issuetype\": {\r\n          \"name\": \""+name+"\"\r\n       }\r\n   }\r\n}";
 		return createissue;
 	}
 
@@ -50,6 +50,13 @@ public class Payload{
 		String invalibody="{\r\n    \"fields\": {\r\n       \"projects\":\r\n       {\r\n          \"keys\": \"DC\"\r\n       },\r\n       \"summaryss\": \"Debit Card information is not getting saved properly into database\",\r\n       \"description\": \"After submitting the POST request from API,the debit card information is not getting saved into the database \",\r\n       \"issuetype\": {\r\n          \"name\": \"Bug\"\r\n       }\r\n   }\r\n}";
 		return invalibody;
 	}
+	
+	public static String AddComment(String comment)
+	{
+		String addcomment="{\r\n    \"body\": \""+comment+"\"\r\n}";
+		return addcomment;
+	}
+	
 	
 }
 
