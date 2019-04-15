@@ -77,6 +77,11 @@ public class APITestUtil {
 		return comments;
 	}
 
+	public static String GetTweets()
+	{
+		String getweet="/1.1/statuses/home_timeline.json";
+		return getweet;
+	}
 	
 	
 }

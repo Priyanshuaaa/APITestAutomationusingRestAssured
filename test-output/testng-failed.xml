@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.JIRAAPITests.CreateIssue">
+      <class name="com.qa.TwitterAPITests.GetTweets">
         <methods>
-          <include name="GetIssueDetails"/>
+          <include name="Getweets"/>
           <include name="getdata"/>
         </methods>
-      </class> <!-- com.qa.JIRAAPITests.CreateIssue -->
+      </class> <!-- com.qa.TwitterAPITests.GetTweets -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
