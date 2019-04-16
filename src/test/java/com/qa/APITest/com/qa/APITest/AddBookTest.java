@@ -41,7 +41,7 @@ public class AddBookTest {
 	}
 
 	
-@Test
+@Test(enabled=false)
 	
 	public void AddbookthroughJSONtest()
 	{
@@ -67,7 +67,7 @@ public Object[][] getbooksdata()
 }
 
 
-@Test(dataProvider="getbooksdata")
+@Test(dataProvider="getbooksdata",enabled=false)
 public void Addbookusingdataprovider(String bookname,String isbn,String aisle,String author)
 {
 RestAssured.baseURI=prop.getProperty("BaseURL");
@@ -97,7 +97,7 @@ header("Content-Type","application/json").body("{"+
 
 
 
-@Test
+@Test(enabled=false)
 public void staticpayloadJSONtest() throws IOException
 {
 RestAssured.baseURI=prop.getProperty("BaseURL");
@@ -111,5 +111,23 @@ JsonPath js=RawtoJSONorXML.rawtoJSON(response);
 System.out.println(response);
 String id=js.get("ID");
 System.out.println(id);
+}
+
+
+
+@Test
+public void AddbookthroughExcel()
+{
+	RestAssured.baseURI=prop.getProperty("BaseURL");
+	Response response=given().
+	header("Content-Type","application/json").body().
+	when().post("Library/Addbook.php").
+	//post(APITestUtil.AddBookresourceURLJSON()).
+	then().assertThat().statusCode(200).
+	extract().response();
+	JsonPath js=RawtoJSONorXML.rawtoJSON(response);
+	System.out.println(response);
+	String id=js.get("ID");
+	System.out.println(id);	
 }
 }
